@@ -20,9 +20,10 @@ export default function CharactersPage() {
         .then(res => {
             //
             allCharacters=res.data;
-            setCharacters(res.data);
+            //ejecutamos una funcion setCharacters con el contenido de datos de nuestro fetch( axios.get) y lo pintamos en consola
+            setCharacters(allCharacters);
             // console.log(allCharacters);
-            console.log(allCharacters);
+          
         })
         .catch(function (error) {
             console.log(error);
@@ -32,7 +33,7 @@ export default function CharactersPage() {
 
     return (
         <div>
-            <p>¿Qué Amiibo quieres encontrar?</p>
+            <p>Toma personaje, quieres más</p>
             {/* Esto sirve para conectar al padre componenete con el hijo  */}
             <CharacterCard characters={characters} />
         </div>
