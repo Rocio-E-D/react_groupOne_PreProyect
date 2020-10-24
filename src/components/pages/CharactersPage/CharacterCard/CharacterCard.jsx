@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export default function CharacterCard(props) {
 
     //es el style del hijo card al padre characterpage

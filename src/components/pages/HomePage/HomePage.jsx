@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 //bloqueo de ruta - img not working
 // import {backgroundImage} from '../../../../public/assets/img/BackgroundHome.jpg';
 
 export default function HomePage() {
-    return (
-        // <img src={backgroundImage} alt=""/>
-        <p>I am home page</p>
-
-    )
+  return (
+    // <img src={backgroundImage} alt=""/>
+    <p>Soy el jompeich verdadero</p>
+  );
 }
 
 // ./src/components/pages/HomePage/HomePage.jsx

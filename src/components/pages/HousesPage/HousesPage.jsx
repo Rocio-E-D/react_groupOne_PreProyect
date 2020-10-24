@@ -13,9 +13,7 @@ export default function HousesPage() {
     useEffect(() => {
         axios.get(process.env.REACT_APP_BACK_URL + 'houses/')
             .then(res => {
-                //
                 allHouses = res.data;
-
                 setHouses(allHouses);
                 console.log(allHouses);
 
