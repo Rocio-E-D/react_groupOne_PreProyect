@@ -1,35 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import axios from 'axios';
+import axios from "axios";
 
-import HousesCard from './HousesCard/HousesCard';
+import HousesCard from "./HousesCard/HousesCard";
 
 let allHouses = [];
 
 export default function HousesPage() {
+  const [houses, setHouses] = useState([]);
 
-    const [houses, setHouses] = useState([]);
+  useEffect(() => {
+    axios
+      .get(process.env.REACT_APP_BACK_URL + "houses/")
+      .then((res) => {
+        allHouses = res.data.filter((house) => house.logoURL); // FILTRA LOS RESULTADOS DEL OBJETO. SOLO PINTA LOS QUE TIENEN logoURL
+        setHouses(allHouses);
+        console.log(allHouses);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
 
-    useEffect(() => {
-        axios.get(process.env.REACT_APP_BACK_URL + 'houses/')
-            .then(res => {
-                allHouses = res.data;
-                setHouses(allHouses);
-                console.log(allHouses);
+  return (
+    <div>
+      <p>Toma personaje, quieres más</p>
 
-
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }, []
-    )
-
-    return (
-        <div>
-            <p>Toma personaje, quieres más</p>
-
-            <HousesCard houses={houses} />
-        </div>
-    )
+      <HousesCard houses={houses} />
+    </div>
+  );
 }
