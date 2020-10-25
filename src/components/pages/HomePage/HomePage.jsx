@@ -1,4 +1,5 @@
 import React from "react";
+import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
 // import hcbgImage from "../";
 import "./scss/homepage.scss";
 // import backgroundImage from '../../../../public/assets/img/Background.jpg'
@@ -8,6 +9,29 @@ import "./scss/homepage.scss";
 
 export default function HomePage() {
   return (
+
+    <div>
+      <h1>Games of Thrones</h1>
+      {/* <div style={{ backgroundImage: `url(${backgroundImage})` }} /> */}
+      <link rel="stylesheet" href="../../../index.scss" />
+      <img  src={backgroundImage} alt="" />
+    </div>
+  )
+
+
+}
+
+
+  // , module: {
+    //   rules: [
+    //     {
+    //       test:/\.(png|jpg|gif)$/,
+    //       loader: 'url-loader'
+    //     }
+    //   ]
+    // }
+
+
     // <img src={backgroundImage} alt=""/>
     // <div>
     //        class="bg_image"
@@ -18,28 +42,3 @@ export default function HomePage() {
     //     color: "#f5f5f5"
     //   }}
     // >
-    <div>
-      <h1>Games of Thrones</h1>
-      {/* <div style={{ backgroundImage: `url(${backgroundImage})` }} /> */}
-    </div>
-
-    // , module: {
-    //   rules: [
-    //     {
-    //       test:/\.(png|jpg|gif)$/,
-    //       loader: 'url-loader'
-    //     }
-    //   ]
-    // }
-   
-// import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
-// <link rel="stylesheet" href="../../../index.scss"/>
-// export default function HomePage() {
-//   return (
-//     <img className="img-fluid" src={backgroundImage} alt=""/>
-    
-//   );
-// }
-
-  )
-}
