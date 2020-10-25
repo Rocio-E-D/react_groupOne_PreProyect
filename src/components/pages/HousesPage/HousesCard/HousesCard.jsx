@@ -7,8 +7,11 @@ export default function HousesCard(props) {
       {props.houses.map((house, index) => (
         <div className="col-4">
           <figure>
-            <Link to={`${house.slug}`}> {house.name} </Link>
-            <img src={house.logoURL} alt={house.name} />
+            <Link to={`${house.name}`}> {house.name} </Link>
+            <Link to={`${house.name}`}>
+              {" "}
+              <img src={house.logoURL} alt={house.name} />{" "}
+            </Link>
           </figure>
         </div>
       ))}

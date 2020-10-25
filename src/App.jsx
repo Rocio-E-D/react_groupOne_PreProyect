@@ -5,7 +5,7 @@ import {Router, Route, Switch } from "react-router-dom"}; = sustituir por lo sig
 */
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import "./App.css";
+import "./App.scss";
 // importanciones de la page
 import CharactersPage from "./components/pages/CharactersPage/CharactersPage";
 import ChronologyPage from "./components/pages/ChronologyPage/ChronologyPage";
