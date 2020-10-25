@@ -4,9 +4,12 @@
   font-family: 'GameOfThronesFont';
   src: local('GameOfThronesFont'), url('./assets/fonts/game-of-thrones-font.ttf') format('truetype');
 }
-
+.img-fluid{
+   max-width: 100%;
+   height: auto;
+}
 body {
-  margin: 10vh;
+ 
   font-family: 'GameOfThronesFont';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,10 +1,10 @@
 import React from "react";
 //bloqueo de ruta - img not working
 import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
-
+<link rel="stylesheet" href="../../../index.scss"/>
 export default function HomePage() {
   return (
-    <img src={backgroundImage} alt=""/>
+    <img className="img-fluid" src={backgroundImage} alt=""/>
     
   );
 }
