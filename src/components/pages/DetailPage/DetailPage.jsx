@@ -5,6 +5,6 @@ import React from 'react';
 
 export default function DetailPage() {
     
-    return (console.log("holi"));
+    return (<p>hi9iii</p>);
 
 }

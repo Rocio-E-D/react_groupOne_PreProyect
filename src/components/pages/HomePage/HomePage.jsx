@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
+// import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
 // import hcbgImage from "../";
 import "./scss/homepage.scss";
 // import backgroundImage from '../../../../public/assets/img/Background.jpg'
@@ -14,7 +14,7 @@ export default function HomePage() {
       <h1>Games of Thrones</h1>
       {/* <div style={{ backgroundImage: `url(${backgroundImage})` }} /> */}
       <link rel="stylesheet" href="../../../index.scss" />
-      <img  src={backgroundImage} alt="" />
+      {/* <img  src={backgroundImage} alt="" /> */}
     </div>
   )
 
