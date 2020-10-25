@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './fonts/game-of-thrones-font.ttf'
+import './assets/fonts/game-of-thrones-font.ttf'
 
 ReactDOM.render(
   <React.StrictMode>
