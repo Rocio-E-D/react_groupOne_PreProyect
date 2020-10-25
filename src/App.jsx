@@ -40,9 +40,9 @@ function App() {
             <HousesPage />
           </Route>
 
-          {/* <Route path="/:id">
+          <Route path="/detail/:detail" components = {DetailPage}>
             <DetailPage />
-          </Route> */}
+          </Route>
 
           <Route exact path="/">
             <HomePage />

@@ -10,7 +10,7 @@ export default function HousesCard(props) {
             <Link to={`${house.name}`}> {house.name} </Link>
             <Link to={`${house.name}`}>
               {" "}
-              <img src={house.logoURL} alt={house.name} />{" "}
+              <img  src={house.logoURL} alt={house.name} />{" "}
             </Link>
           </figure>
         </div>
