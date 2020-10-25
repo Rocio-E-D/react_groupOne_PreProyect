@@ -8,17 +8,15 @@ export default function CharacterCard(props) {
       {/* Hacemos un map que nos aplique el mismo tratamiento a todos los caracteres de nuestro array */}
 
       {props.characters.map((character, index) => (
-        <div className="col-4">
-          <figure>
-            {/* esto pinta la carta con un parrafo nombre y la imagen */}
+        <figure className="col-4">
+          {/* esto pinta la carta con un parrafo nombre y la imagen */}
 
-            <Link to={`${character.name}`}> {character.name} </Link>
-            <Link to={`${character.name}`}>
-              {" "}
-              <img src={character.image} alt={character.name} />{" "}
-            </Link>
-          </figure>
-        </div>
+          <Link to={`${character.name}`}> {character.name} </Link>
+          <Link to={`${character.name}`}>
+            {" "}
+            <img src={character.image} alt={character.name} />{" "}
+          </Link>
+        </figure>
       ))}
     </div>
   );

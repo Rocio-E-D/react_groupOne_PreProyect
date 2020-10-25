@@ -24,8 +24,6 @@ export default function HousesPage() {
 
   return (
     <div>
-      <p>Toma personaje, quieres más</p>
-
       <HousesCard houses={houses} />
     </div>
   );
