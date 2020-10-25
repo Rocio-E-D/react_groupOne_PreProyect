@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import CharacterPage from "../CharacterPage/CharacterPage"
 
 export default function CharacterCard(props) {
+
+  // const CharacterDetail = ({
+  //   house,
+  //   allegiances,
+  //   mentions,
+  //   father,
+  //   siblings,
+  //   titles,
+  // }) => {
   //es el style del hijo card al padre characterpage
   return (
     <div className="row">
@@ -21,5 +31,9 @@ export default function CharacterCard(props) {
         </div>
       ))}
     </div>
+
+  
+
+    
   );
 }

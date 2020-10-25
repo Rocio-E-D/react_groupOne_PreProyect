@@ -1,3 +1,10 @@
 * {
+<<<<<<< HEAD
   background-image: url("../../../../assets/img/BackgroundHome.jpg");
 }
+=======
+  background: url("../../../../assets/img/BackgroundHome.jpg");
+  margin: 0;
+}
+
+>>>>>>> 050ef3d83ff105d9d5f0bbe26dd6aed01585bfe4

@@ -20,18 +20,6 @@ export default function HomePage() {
 
 
 }
-
-
-  // , module: {
-    //   rules: [
-    //     {
-    //       test:/\.(png|jpg|gif)$/,
-    //       loader: 'url-loader'
-    //     }
-    //   ]
-    // }
-
-
     // <img src={backgroundImage} alt=""/>
     // <div>
     //        class="bg_image"
