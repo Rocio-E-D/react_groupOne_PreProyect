@@ -50,9 +50,6 @@ export default function CharactersPage() {
         //         console.log(error);
         // })
 
-
-
-
         //se genera el enlace a la API 
         // axios.get(process.env.REACT_APP_BACK_URL + 'characters/')
         //     //Se le indica lo que deseas obtener
