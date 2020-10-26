@@ -22,8 +22,8 @@ export default function CharacterCard(props) {
           <figure>
             {/* esto pinta la carta con un parrafo nombre y la imagen */}
               {/* se enlaza con la ruta del app.jsx del DetailPage */}
-            <Link to={`./detail/${character.name}`}> {character.name} </Link>
-            <Link to={`./detail/${character.name}`}>
+            <Link to={`./character/${character.name}`}> {character.name} </Link>
+            <Link to={`./character/${character.name}`}>
               {" "}
               <img src={character.image} alt={character.name} />{" "}
             </Link>

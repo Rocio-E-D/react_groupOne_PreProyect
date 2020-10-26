@@ -40,7 +40,11 @@ function App() {
             <HousesPage />
           </Route>
 
-          <Route path="/detail/detail" component ={DetailPage}>
+          <Route path="/character/:detail" component ={ DetailPage }>
+            <DetailPage />
+          </Route>
+
+          <Route path="/house/:detail" component ={ DetailPage }>
             <DetailPage />
           </Route>
 

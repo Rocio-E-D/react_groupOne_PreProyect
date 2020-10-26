@@ -1,30 +1,23 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+// import { Link } from "react-router-dom";
 
 // TIENE QUE TENER UNA RUTA DINAMICA QUE CMABIE CON CADA ID
 // ENVOLVER LA IMAGEN EN UN BOTON Y QUE REDIRIJA 
 
 export default function DetailPage(props) {
-    
+    // useParams();
     return (
 
-      <p>holiii</p>
-      //   <div className="row">
-      //   {/* Hacemos un map que nos aplique el mismo tratamiento a todos los caracteres de nuestro array */}
-  
-      //      {props.characters.map((character, index) => (
-      //       <figure className="col-6">
-      //       {/* esto pinta la carta con un parrafo nombre y la imagen */}
-      //             <ul>
-      //                   <li>
-      //                        {character.name}
-      //                    </li>
-      //           {/* <li>
-      //               <img src={character.image} alt={character.name} />{" "}
-      //           </li> */}
-      //             </ul>
-      //     </figure>
-      //   ))}
-      // </div>
+      <div class="col mb-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+      
     );
 }
