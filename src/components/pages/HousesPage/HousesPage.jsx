@@ -23,8 +23,8 @@ export default function HousesPage() {
   }, []);
 
   return (
-    <div>
+    <section>
       <HousesCard houses={houses} />
-    </div>
+    </section>
   );
 }

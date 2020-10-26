@@ -1,0 +1,15 @@
+//Aquí han de venir los imports de variables / mixins / funtion
+
+//Luego lo pongo todo en orden y creo variables para tener solo una page donde modificar datos/tamaño/colores
+
+section {
+  background: black;
+  margin: 0px;
+  padding: 0px;
+
+  article {
+    display: flex;
+    justify-items: center;
+    margin: 5px;
+  }
+}
