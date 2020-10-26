@@ -3,8 +3,8 @@
 //Luego lo pongo todo en orden y creo variables para tener solo una page donde modificar datos/tamaño/colores
 
 
-body {
-    background: url("../../../../assets/img/BackgroundHome.jpg");
+.HomePage {
+    background-image: url("../../../../assets/img/BackgroundHome.jpg");
     background-size: cover;
     // Para que la imagen de fondo no se repita
     background-repeat: no-repeat;

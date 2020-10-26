@@ -1,7 +1,7 @@
 import React from "react";
 // import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
 // import hcbgImage from "../";
-import "./scss/homestyle.scss";
+import "./scss/homepage.scss";
 // import backgroundImage from '../../../../public/assets/img/Background.jpg'
 
 //bloqueo de ruta - img not working
@@ -10,7 +10,7 @@ import "./scss/homestyle.scss";
 export default function HomePage() {
   return (
     //Esta tag es para englobar aquello que vaya aparte del nav y las secciones
-    <main>
+    <main className="HomePage">
       <h1>Games of Thrones </h1>
       {/* <div style={{ backgroundImage: `url(${backgroundImage})` }} /> */}
       {/* <link rel="stylesheet" href="../../../homestyle.scss" /> */}
