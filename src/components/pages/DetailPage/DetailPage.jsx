@@ -21,6 +21,9 @@ export default function DetailPage() {
 
   console.log(myCharDetail);
 
+  // const charAllegiances = myCharDetail.map((chars) => chars.allegiances);
+  // console.log(charAllegiances);
+
   return (
     <main>
       <div>
