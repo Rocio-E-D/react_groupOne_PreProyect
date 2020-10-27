@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./scss/characterstyle.scss";
+// import "./scss/characterstyle.scss";
 import axios from "axios";
 
 //Nos va a permitir renderizar el componente hijo

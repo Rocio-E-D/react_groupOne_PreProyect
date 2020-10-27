@@ -10,9 +10,11 @@
 //    height: auto;
 // }
 
-body {
+
+//Se utilza el * para que aplique a todo el 
+html {
+  background-color: black;
   font-family: 'GameOfThronesFont';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
