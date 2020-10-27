@@ -22,12 +22,12 @@ function App() {
 
         <Switch>
           {/* Renderizar las rutas principales */}
-
-          <Route path="/character/:detail" component ={ DetailPage }>
+            
+          <Route path="/character/:character" component ={ DetailPage }>
             <DetailPage />
           </Route>
 
-          <Route path="/house/:detail" component ={ DetailPage }>
+          <Route path="/house/:house" component ={ DetailPage }>
             <DetailPage />
           </Route>
 
