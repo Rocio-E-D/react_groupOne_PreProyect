@@ -29,40 +29,40 @@ export default function DetailHouse(props) {
     <main className="container-character">
       
       <figure className="col-1">
-        <img src={house.image} alt={house.name} />
-        <h2>{house.name}</h2>
+        <img src={house[0].logoURL} alt={house[0].name} />
+        <h2>{house[0].name}</h2>
         <p></p>
       </figure>
 
       <div className="row">
         <section className="col-2">
           <h2>Lema</h2>
-          <p>{house.sigil}</p>
+          <p>{house[0].sigil}</p>
         </section>
 
         <section className="col-2">
           <h2>Sede</h2>
-          <p>{house.seat}</p>
+          <p>{house[0].seat}</p>
         </section>
 
         <section className="col-2">
           <h2>Región</h2>
-          <p>{house.region}</p>
+          <p>{house[0].region}</p>
         </section>
 
         <section className="col-2">
           <h2>Alianzas</h2>
-          <p>{house.allegiances}</p>
+          <p>{house[0].allegiances}</p>
         </section>
 
         <section className="col-2">
           <h2>Religiones</h2>
-          <p>{house.religion}</p>
+          <p>{house[0].religion}</p>
         </section>
 
         <section className="col-2">
           <h2>Fundación</h2>
-          <p>{house.createdAt}</p>
+          <p>{house[0].createdAt}</p>
         </section>
       </div>
     </main>
