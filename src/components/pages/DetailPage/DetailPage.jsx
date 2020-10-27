@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 import React from 'react';
 // import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 // import { Link } from "react-router-dom";
+=======
+>>>>>>> ba90aaf872845784d0961b41f69857d86475324d
 
-// TIENE QUE TENER UNA RUTA DINAMICA QUE CMABIE CON CADA ID
-// ENVOLVER LA IMAGEN EN UN BOTON Y QUE REDIRIJA 
+// import React, { useState, useEffect } from "react";
+// import { useParams } from "react-router-dom";
+// import axios from "axios";
 
+<<<<<<< HEAD
 export default function DetailPage(props) {
     // useParams();
     return (
@@ -18,6 +23,75 @@ export default function DetailPage(props) {
   //     </div>
   //   </div>
   // </div>
+=======
+
+// export default function DetailPage(props) {
+ 
+//  const [house, setHouse] = useState([useParams().house]);
+// console.log()
+//     useEffect(() => {
+//       axios
+//         .get(process.env.REACT_APP_BACK_URL + `houses/${house}`)
+//         .then((res) => {
+//           house = res.data;
+//           setHouse(house);
+     
+          
+//         })
+//         .catch(function (error) {
+//           console.log(error);
+//         });
+//     }, []);
+//     console.log(house.allegiances);
+  // return (
+//       <main>
+//         <div>
+// {/* foto de casa y nombre de casa */}
+//         </div>
+//         <div>
+//           <section>
+//             <h2>
+//               {house.name}hola
+//             </h2>
+//             <p></p>
+//           </section>
+//           <section>
+//             <h2>
+//               Carta 2
+//             </h2>
+//             <p></p>
+//           </section>
+//           <section>
+//             <h2>
+//               Carta 3
+//             </h2>
+//             <p></p>
+//           </section>
+//           <section>
+//             <h2>
+//               Carta 4
+//             </h2>
+//             <p></p>
+//           </section>
+//           <section>
+//             <h2>
+//               Carta 5
+//             </h2>
+//             <p></p>
+//           </section>
+//           <section>
+//             <h2>
+//               Carta 6
+//             </h2>
+//             <p></p>
+//           </section>
+          
+
+//         </div>
+//       </main>
+   
+    
+>>>>>>> ba90aaf872845784d0961b41f69857d86475324d
       
-    );
-}
+//  );
+// }
