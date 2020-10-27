@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./scss/characterstyle.scss";
+// import "characterspage.scss";
 //se extrae del paquete axios
 import axios from "axios";
 

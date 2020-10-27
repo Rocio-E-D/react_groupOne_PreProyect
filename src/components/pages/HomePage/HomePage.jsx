@@ -1,25 +1,23 @@
 import React from "react";
-// import backgroundImage from '../../../assets/img/BackgroundHome.jpg';
-// import hcbgImage from "../";
-import "./scss/homepage.scss";
-// import backgroundImage from '../../../../public/assets/img/Background.jpg'
+import "./scss/homepage.scss"
 
-//bloqueo de ruta - img not working
-// import backgroundImage from '../../../../public/assets/img/BackgroundHome.jpg';
+
 
 export default function HomePage() {
   return (
     //Esta tag es para englobar aquello que vaya aparte del nav y las secciones
-    <main className="HomePage">
+    <main>
       <h1>Games of Thrones </h1>
-      {/* <div style={{ backgroundImage: `url(${backgroundImage})` }} /> */}
-      {/* <link rel="stylesheet" href="../../../homestyle.scss" /> */}
-      {/* <img  src={backgroundImage} alt="" /> */}
     </main>
   )
 
-
 }
+
+  // {/* <div style={{ backgroundImage: `url(${backgroundImage})` }} /> */}
+  //     {/* <link rel="stylesheet" href="../../../homestyle.scss" /> */}
+  //     {/* <img  src={backgroundImage} alt="" /> */}
+
+
     // <img src={backgroundImage} alt=""/>
     // <div>
     //        class="bg_image"

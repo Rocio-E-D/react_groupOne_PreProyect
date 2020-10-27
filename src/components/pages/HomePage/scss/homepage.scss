@@ -2,27 +2,25 @@
 
 //Luego lo pongo todo en orden y creo variables para tener solo una page donde modificar datos/tamaño/colores
 
-
-.HomePage {
-    background-image: url("../../../../assets/img/BackgroundHome.jpg");
-    background-size: cover;
-    // Para que la imagen de fondo no se repita
-    background-repeat: no-repeat;
-    //La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido
-    background-attachment: fixed;
-    //Para dejar la imagen de fondo centrada, vertical y horizontalmente
-    background-position: center center;
-
+main  {
+  background-image: url("../BackgroundHome.jpg");
+  background-size: auto;
+  // Para que la imagen de fondo no se repita
+  background-repeat: no-repeat;
+  //La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido
+  background-attachment: fixed;
+  //Para dejar la imagen de fondo centrada, vertical y horizontalmente
+  background-position: center center;
     h1 {
         display: flex;
         justify-content: center;
         color: #f8fff8;
         text-align: center;
-        font-size:10vh; //para el mixin se añadirá % según screen
+        font-size: 10vh; //para el mixin se añadirá % según screen
         text-align: justify;
         font-weight: lighter;
         margin: 3em;
+
     }
+
 }
-
-
