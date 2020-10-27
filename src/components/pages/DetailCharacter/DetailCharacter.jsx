@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 // import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import HousesCard from "../HousesPage/HousesCard/HousesCard";
-import "./scss/detailpage.scss";
+// import HousesCard from "../HousesPage/HousesCard/HousesCard";
+import "./scss/detailcharacter.scss";
 
-export default function DetailPage(props) {
+export default function DetailCharacter(props) {
   const [character, setCharacter] = useState([useParams().character]);
   // const character = useParams().detail;
   console.log(useParams());
@@ -48,7 +47,7 @@ export default function DetailPage(props) {
 
       <figure className="col-1">
         <img src={character.image} alt={character.name} />
-        <h2>{character.name}hola</h2>
+        <h2>{character.name}</h2>
         <p></p>
       </figure>
 
@@ -81,71 +80,6 @@ export default function DetailPage(props) {
         <section className="col-2">
           <h2>Títulos</h2>
           <p>{character.titles}</p>
-=======
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
-
-export default function DetailPage() {
-  const [myCharDetail, setCharacters] = useState([]);
-
-  const charNameFromURL = useParams().detail;
-
-  useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_BACK_URL}characters/${charNameFromURL}`)
-      .then((res) => {
-        const myCharDetail = res.data;
-        setCharacters(myCharDetail);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }, []);
-
-  console.log(myCharDetail);
-
-  // const charAllegiances = myCharDetail.map((chars) => chars.allegiances);
-  // console.log(charAllegiances);
-
-  return (
-    <main>
-      <div>
-        <img src={myCharDetail.image} alt={myCharDetail.name} />
-        <h3>{myCharDetail.name}</h3>
-      </div>
-
-      <div>
-        <section>
-          <h2>CASA</h2>
-          <p>AQUI VA LA FOTO DE LA CASA</p>
-        </section>
-
-        <section>
-          <h2>ALIANZAS</h2>
-          {/* {console.log(myc)} */}
-          {/* <p>{myCharDetail.map((mappedChars) => mappedChars.allegiances)}</p>; */}
-        </section>
-
-        <section>
-          <h2>APARICIONES</h2>
-          <p></p>
-        </section>
-
-        <section>
-          <h2>PADRE</h2>
-          <p>{myCharDetail.fathergit}</p>
-        </section>
-
-        <section>
-          <h2>DESCENDIENTES</h2>
-          <p></p>
-        </section>
-
-        <section>
-          <h2>TITULOS</h2>
-          <p></p>
->>>>>>> a3271365de97ae95e263b66d2d801dfd85c37439
         </section>
       </div>
     </main>
