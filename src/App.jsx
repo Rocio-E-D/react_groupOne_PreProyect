@@ -1,4 +1,4 @@
-// Componentes del NPM REACT Router Dom 
+// Componentes del NPM REACT Router Dom
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Componentes varios
@@ -22,12 +22,25 @@ function App() {
 
         <Switch>
           {/* Renderizar las rutas principales */}
+<<<<<<< HEAD
             
           <Route path="/character/:character" component ={ DetailPage }>
             <DetailPage />
           </Route>
 
           <Route path="/house/:house" component ={ DetailPage }>
+=======
+
+          <Route path="/character/:detail" component={DetailPage}>
+            <DetailPage />
+          </Route>
+
+          {/* <Route path="/character/:religion" component={DetailPage}>
+            <DetailPage />
+          </Route>  */}
+
+          <Route path="/house/:detail" component={DetailPage}>
+>>>>>>> a3271365de97ae95e263b66d2d801dfd85c37439
             <DetailPage />
           </Route>
 
