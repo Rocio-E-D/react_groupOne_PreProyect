@@ -1,19 +1,13 @@
-//import logo from './logo.svg';
-/*
-Son componentes del NPM REACT Router Dom 
-import {Router, Route, Switch } from "react-router-dom"}; = sustituir por lo siguiente
-*/
+// Componentes del NPM REACT Router Dom 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// Componentes varios
 import "./App.scss";
-// importanciones de la page
 import CharactersPage from "./components/pages/CharactersPage/CharactersPage";
 import ChronologyPage from "./components/pages/ChronologyPage/ChronologyPage";
 import DetailPage from "./components/pages/DetailPage/DetailPage";
 import HomePage from "./components/pages/HomePage/HomePage";
 import HousesPage from "./components/pages/HousesPage/HousesPage";
-
-// importación components routes
 import NavBar from "./components/shared/NavBar/NavBar";
 
 function App() {
@@ -28,6 +22,15 @@ function App() {
 
         <Switch>
           {/* Renderizar las rutas principales */}
+
+          <Route path="/character/:detail" component ={ DetailPage }>
+            <DetailPage />
+          </Route>
+
+          <Route path="/house/:detail" component ={ DetailPage }>
+            <DetailPage />
+          </Route>
+
           <Route path="/chronology">
             <ChronologyPage />
           </Route>
@@ -38,14 +41,6 @@ function App() {
 
           <Route path="/houses">
             <HousesPage />
-          </Route>
-
-          <Route path="/character/:detail" component ={ DetailPage }>
-            <DetailPage />
-          </Route>
-
-          <Route path="/house/:detail" component ={ DetailPage }>
-            <DetailPage />
           </Route>
 
           <Route exact path="/">

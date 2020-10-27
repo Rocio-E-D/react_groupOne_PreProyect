@@ -1,12 +1,19 @@
 
-// import React, { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
-// import axios from "axios";
+ import React, { useState, useEffect } from "react";
+ import { useParams } from "react-router-dom";
+ import axios from "axios";
 
 
-// export default function DetailPage(props) {
+ export default function DetailPage(props) {
+
+  return(
+    <p>esta es la detail page</p>
+  )
  
-//  const [house, setHouse] = useState([useParams().house]);
+
+ }
+
+ //  const [house, setHouse] = useState([useParams().house]);
 // console.log()
 //     useEffect(() => {
 //       axios
@@ -72,4 +79,3 @@
     
       
 //  );
-// }
