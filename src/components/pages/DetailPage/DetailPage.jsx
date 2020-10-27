@@ -1,79 +1,65 @@
-// import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
-// import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
- import React, { useState, useEffect } from "react";
- import { useParams } from "react-router-dom";
- import axios from "axios";
+export default function DetailPage() {
+  const [myCharDetail, setCharacters] = useState([]);
 
+  const charNameFromURL = useParams().detail;
 
- export default function DetailPage(props) {
-  return(
-    <p>esta es la detail page</p>
-  )
- }
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_BACK_URL}characters/${charNameFromURL}`)
+      .then((res) => {
+        const myCharDetail = res.data;
+        setCharacters(myCharDetail);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
 
- //  const [house, setHouse] = useState([useParams().house]);
-// console.log()
-//     useEffect(() => {
-//       axios
-//         .get(process.env.REACT_APP_BACK_URL + `houses/${house}`)
-//         .then((res) => {
-//           house = res.data;
-//           setHouse(house);
-     
-          
-//         })
-//         .catch(function (error) {
-//           console.log(error);
-//         });
-//     }, []);
-//     console.log(house.allegiances);
-  // return (
-//       <main>
-//         <div>
-// {/* foto de casa y nombre de casa */}
-//         </div>
-//         <div>
-//           <section>
-//             <h2>
-//               {house.name}hola
-//             </h2>
-//             <p></p>
-//           </section>
-//           <section>
-//             <h2>
-//               Carta 2
-//             </h2>
-//             <p></p>
-//           </section>
-//           <section>
-//             <h2>
-//               Carta 3
-//             </h2>
-//             <p></p>
-//           </section>
-//           <section>
-//             <h2>
-//               Carta 4
-//             </h2>
-//             <p></p>
-//           </section>
-//           <section>
-//             <h2>
-//               Carta 5
-//             </h2>
-//             <p></p>
-//           </section>
-//           <section>
-//             <h2>
-//               Carta 6
-//             </h2>
-//             <p></p>
-//           </section>
-          
+  console.log(myCharDetail);
 
-//         </div>
-//       </main>
-  
-      
-//  );
+  return (
+    <main>
+      <div>
+        <img src={myCharDetail.image} alt={myCharDetail.name} />
+        <h3>{myCharDetail.name}</h3>
+      </div>
+
+      <div>
+        <section>
+          <h2>CASA</h2>
+          <p>AQUI VA LA FOTO DE LA CASA</p>
+        </section>
+
+        <section>
+          <h2>ALIANZAS</h2>
+          {/* {console.log(myc)} */}
+          {/* <p>{myCharDetail.map((mappedChars) => mappedChars.allegiances)}</p>; */}
+        </section>
+
+        <section>
+          <h2>APARICIONES</h2>
+          <p></p>
+        </section>
+
+        <section>
+          <h2>PADRE</h2>
+          <p>{myCharDetail.fathergit}</p>
+        </section>
+
+        <section>
+          <h2>DESCENDIENTES</h2>
+          <p></p>
+        </section>
+
+        <section>
+          <h2>TITULOS</h2>
+          <p></p>
+        </section>
+      </div>
+    </main>
+  );
+}
