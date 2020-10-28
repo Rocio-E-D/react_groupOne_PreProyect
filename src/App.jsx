@@ -10,6 +10,7 @@ import DetailHouse from "./components/pages/DetailHouse/DetailHouse";
 import HomePage from "./components/pages/HomePage/HomePage";
 import HousesPage from "./components/pages/HousesPage/HousesPage";
 import NavBar from "./components/shared/NavBar/NavBar";
+import {Search} from "./components/shared/Search/Search";
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
 
         <Switch>
           {/* Renderizar las rutas principales */}
-            
+          <Route path="/search" component ={ Search }>
+            <Search />
+          </Route> 
           <Route path="/character/:character" component ={ DetailCharacter }>
             <DetailCharacter />
           </Route>

@@ -1,5 +1,4 @@
 // import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
-import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -54,12 +53,17 @@ export default function DetailCharacter(props) {
       <div className="row">
         <section className="col-2">
           <h2>{house.name}house</h2>
+<<<<<<< HEAD
           <img src={house[0].logoURL} alt={house.name} />
+=======
+          <p>{character.house}</p>
+          <img src={house.logoURL} alt={house.name} />
+>>>>>>> 6db4f37aca6d08d36cf0e983ec04b3eb49d01262
         </section>
 
         <section className="col-2">
           <h2>Alianza</h2>
-          <p>{character.allegiance}</p>
+          <p>{character.allegiances}</p>
         </section>
 
         <section className="col-2">

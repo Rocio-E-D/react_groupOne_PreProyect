@@ -1,0 +1,17 @@
+.footer-nav {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 2.5rem;
+    margin: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-nav--links {
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+    min-width: 4rem;
+}
