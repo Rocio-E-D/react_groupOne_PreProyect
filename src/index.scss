@@ -10,12 +10,16 @@
 //    height: auto;
 // }
 
-
-//Se utilza el * para que aplique a todo el 
-* {
-  background-color: black;
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: 'GameOfThronesFont';
+  // background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
+  background-color: black;
 }
+
+//Se utilza el * para que aplique a todo el 

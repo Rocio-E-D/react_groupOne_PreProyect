@@ -26,15 +26,11 @@ export default function DetailHouse(props) {
   console.log(house.titles);
 
   return (
-    <main className="container-character">
+    <main className="container-hpuse">
       
       <figure className="col-1">
         <img src={house[0].logoURL} alt={house[0].name} />
-<<<<<<< HEAD
-        <h2>{house.name}</h2>
-=======
         <h2>{house[0].name}</h2>
->>>>>>> 6db4f37aca6d08d36cf0e983ec04b3eb49d01262
         <p></p>
       </figure>
 

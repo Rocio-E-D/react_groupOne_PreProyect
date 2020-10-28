@@ -53,12 +53,7 @@ export default function DetailCharacter(props) {
       <div className="row">
         <section className="col-2">
           <h2>{house.name}house</h2>
-<<<<<<< HEAD
-          <img src={house[0].logoURL} alt={house.name} />
-=======
-          <p>{character.house}</p>
-          <img src={house.logoURL} alt={house.name} />
->>>>>>> 6db4f37aca6d08d36cf0e983ec04b3eb49d01262
+          {/* <img src={house[0].logoURL} alt={house.name} /> */}
         </section>
 
         <section className="col-2">
