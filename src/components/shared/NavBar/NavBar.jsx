@@ -1,20 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NavBar.scss";
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav className="footer-nav">
       {/* Se utiliza etiquetas propias de la biblioteca REACT Router Dom que se asimila = <a href=""></a> */}
-      <Link to="/">Home</Link>
-      <Link to="/characters">Personajes</Link>
-      <Link to="/houses">Casas</Link>
-      <Link to="/chronology">Cronología</Link>
+      <Link className="footer-nav--links" to="/">
+        Home
+      </Link>
+      <Link className="footer-nav--links" to="/characters">
+        Personajes
+      </Link>
+      <Link className="footer-nav--links" to="/houses">
+        Casas
+      </Link>
+      <Link className="footer-nav--links" to="/chronology">
+        Cronologia
+      </Link>
       {/* //linkeo el search */}
-      <Link 
-            activeClassName = "active"
-            className="nav-item nav-link"
-            exact
-            to="/search">Search</Link>
+      <Link
+        className="footer-nav--links"
+        activeClassName="active"
+        exact
+        to="/search"
+      >
+        Search
+      </Link>
     </nav>
   );
 }
