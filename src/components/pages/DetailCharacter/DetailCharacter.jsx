@@ -54,7 +54,7 @@ export default function DetailCharacter(props) {
       <div className="row">
         <section className="col-2">
           <h2>{house.name}house</h2>
-          <img src={house.logoURL} alt={house.name} />
+          <img src={house[0].logoURL} alt={house.name} />
         </section>
 
         <section className="col-2">

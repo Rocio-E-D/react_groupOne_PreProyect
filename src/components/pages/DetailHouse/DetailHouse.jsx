@@ -29,7 +29,7 @@ export default function DetailHouse(props) {
     <main className="container-character">
       
       <figure className="col-1">
-        <img src={house.image} alt={house.name} />
+        <img src={house[0].logoURL} alt={house[0].name} />
         <h2>{house.name}</h2>
         <p></p>
       </figure>
