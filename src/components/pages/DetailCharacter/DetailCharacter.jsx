@@ -54,12 +54,13 @@ export default function DetailCharacter(props) {
       <div className="row">
         <section className="col-2">
           <h2>{house.name}house</h2>
+  <p>{character.house}</p>
           <img src={house.logoURL} alt={house.name} />
         </section>
 
         <section className="col-2">
           <h2>Alianza</h2>
-          <p>{character.allegiance}</p>
+          <p>{character.allegiances}</p>
         </section>
 
         <section className="col-2">
