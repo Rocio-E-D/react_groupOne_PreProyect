@@ -9,6 +9,12 @@ export default function NavBar() {
       <Link to="/characters">Personajes</Link>
       <Link to="/houses">Casas</Link>
       <Link to="/chronology">Cronología</Link>
+      {/* //linkeo el search */}
+      <Link 
+            activeClassName = "active"
+            className="nav-item nav-link"
+            exact
+            to="/search">Search</Link>
     </nav>
   );
 }

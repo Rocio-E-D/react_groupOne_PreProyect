@@ -5,10 +5,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import CharactersPage from "./components/pages/CharactersPage/CharactersPage";
 import ChronologyPage from "./components/pages/ChronologyPage/ChronologyPage";
-import DetailPage from "./components/pages/DetailPage/DetailPage";
+import DetailCharacter from "./components/pages/DetailCharacter/DetailCharacter";
+import DetailHouse from "./components/pages/DetailHouse/DetailHouse";
 import HomePage from "./components/pages/HomePage/HomePage";
 import HousesPage from "./components/pages/HousesPage/HousesPage";
 import NavBar from "./components/shared/NavBar/NavBar";
+import {Search} from "./components/shared/Search/Search";
 
 function App() {
   return (
@@ -22,17 +24,15 @@ function App() {
 
         <Switch>
           {/* Renderizar las rutas principales */}
-
-          <Route path="/character/:detail" component={DetailPage}>
-            <DetailPage />
+          <Route path="/search" component ={ Search }>
+            <Search />
+          </Route> 
+          <Route path="/character/:character" component ={ DetailCharacter }>
+            <DetailCharacter />
           </Route>
 
-          {/* <Route path="/character/:religion" component={DetailPage}>
-            <DetailPage />
-          </Route>  */}
-
-          <Route path="/house/:detail" component={DetailPage}>
-            <DetailPage />
+          <Route path="/house/:house" component ={ DetailHouse }>
+            <DetailHouse />
           </Route>
 
           <Route path="/chronology">
