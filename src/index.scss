@@ -1,8 +1,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 @font-face {
-  font-family: 'GameOfThronesFont';
-  src: local('GameOfThronesFont'), url('./assets/fonts/game-of-thrones-font.ttf') format('truetype');
+  font-family: "GameOfThronesFont";
+  src: local("GameOfThronesFont"),
+    url("./assets/fonts/game-of-thrones-font.ttf") format("truetype");
 }
 
 // .img-fluid{
@@ -12,73 +13,88 @@
 
 //Cuerpo de la web
 body {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'GameOfThronesFont';
+  font-family: "GameOfThronesFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   background-color: black;
-
-
-
 
   padding-bottom: 5rem; //NO TOCAR, esto hace que el footer se vea guay
 }
 
 //HomePage - Sami
 .background-image {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  background-image: url("../src/assets/img/BackgroundHome.jpg") ;
+  background-image: url("../src/assets/img/BackgroundHome.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   justify-content: center;
 
   .homepage-title {
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     color: white;
-  
-  
+
     padding: 0;
     box-sizing: border-box;
-  
+
     font-size: 6vw;
     padding: 1rem;
   }
-
 }
+// RETURN HOME -- Sami
 
+.home-return-container {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-//NavBar -- Sami 
-.nav-container {  
   display: flex;
   flex-wrap: wrap;
-  
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
 
   width: 100vw;
-  height: 10%;
+  height: 5vh;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: black;
+}
+
+.return-button {
+  display: flex;
+  width: 2rem;
+  height: auto;
+  // align-items: center;
+  // justify-content: center;
+  margin-right: 3rem;
+}
+
+//NavBar -- Sami
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  position: fixed; // Esto hace que flote sobre los demas elementos
+  left: 0;
+  right: 0;
+  bottom: 0; // esto para que se quede abajo pegadito
+
+  width: 100vw;
+  height: 10%; // al elemento padre hay que quitarle el 90%
   align-items: center;
   justify-content: center;
   background-color: black;
-
-
 }
 
 .nav-link {
@@ -89,7 +105,6 @@ body {
   text-decoration: none;
   color: white;
   font-size: 3rem;
-
 }
 
 //Character Page -- House Page - Ro
@@ -101,7 +116,8 @@ body {
 }
 
 //characterCard
-.characterCard {}
+.characterCard {
+}
 
 //ChronologyPage
 button {
@@ -129,5 +145,3 @@ main {
 //HousePage
 
 //HouseCard
-
-
