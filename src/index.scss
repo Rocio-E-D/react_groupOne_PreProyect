@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 @font-face {
   font-family: "GameOfThronesFont";
@@ -108,15 +108,55 @@ body {
 }
 
 //Character Page -- House Page - Ro
-.Character {
-  display: flex;
-  justify-items: center;
-  flex-wrap: wrap;
-  font-size: 2rem;
+.Character-Container {
+  width: auto;
+  height: auto;
+  margin: 5px;
+  object-fit: cover;
+  
+  .square {
+    size: 10vw;
+    color: #f8fff8;
+  }
 }
 
-//characterCard
-.characterCard {
+//characterCard - HouseCard
+.card-container {
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  flex-wrap: wrap;
+  margin:4rem;
+  //responsive
+  box-sizing: border-box;
+
+
+  figure {
+    display: flex;
+    justify-content: center;
+    
+
+    h2 {
+      font-size: 2vh;
+      color: #f8fff8;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    img {
+      height: auto;       
+      width: auto; 
+      max-width: 500px; 
+      max-height: 400px;
+    }
+
+  }
+
+ 
+  
+
+ 
 }
 
 //ChronologyPage
