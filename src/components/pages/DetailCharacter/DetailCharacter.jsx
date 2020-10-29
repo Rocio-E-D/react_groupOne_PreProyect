@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 // import HousesCard from "../HousesPage/HousesCard/HousesCard";
-import "./scss/detailcharacter.scss";
+import "../../../index.scss";
 
 export default function DetailCharacter(props) {
   const [character, setCharacter] = useState([useParams().character]);

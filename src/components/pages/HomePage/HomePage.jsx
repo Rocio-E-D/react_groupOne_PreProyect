@@ -1,5 +1,5 @@
 import React from "react";
-import "./scss/homepage.scss";
+import "../../../index.scss";
 
 export default function HomePage() {
   return (

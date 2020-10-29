@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 // import HousesCard from "../HousesPage/HousesCard/HousesCard";
-import "./scss/detailhouse.scss";
+import "../../../index.scss";
 
 export default function DetailHouse(props) {
   const [house, setHouse] = useState([useParams().house]);

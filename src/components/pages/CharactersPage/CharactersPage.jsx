@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import "./scss/characterstyle.scss";
+import "../../../index.scss";
 import axios from "axios";
 
 //Nos va a permitir renderizar el componente hijo
@@ -29,8 +29,7 @@ export default function CharactersPage() {
   );
 
   return (
-    <section>
-
+    <section className="Character">
       <article>
         {/* Esto sirve para conectar al padre componenete con el hijo  */}
         <CharacterCard characters={characters} />
