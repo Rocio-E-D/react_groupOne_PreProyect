@@ -4,8 +4,8 @@ import "../../../index.scss";
 export default function HomePage() {
   return (
     //Esta tag es para englobar aquello que vaya aparte del nav y las secciones
-    <main className= "fondo">
-      < h1 className="title">Games of Thrones </h1>
+    <main className="background-image">
+      <h1 className="homepage-title">Game of Thrones </h1>
     </main>
   );
 }

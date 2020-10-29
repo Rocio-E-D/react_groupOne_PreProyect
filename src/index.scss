@@ -21,49 +21,76 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   background-color: black;
+
+
+
+
+  padding-bottom: 5rem; //NO TOCAR, esto hace que el footer se vea guay
 }
 
 //HomePage - Sami
-.fondo {
-  background-image: url("../src/assets/img/BackgroundHome.jpg");
-  background-size: inherit;
-  // Para que la imagen de fondo no se repita
-  background-repeat: no-repeat;
-  //La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido
-  // background-attachment: fixed;
-  //Para dejar la imagen de fondo centrada, vertical y horizontalmente
-  background-position: center center;
-  width: 100%;
-  height: auto;
-  margin: 0px;
+.background-image {
 
-  .title {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-image: url("../src/assets/img/BackgroundHome.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+
+  .homepage-title {
+
     display: flex;
     justify-content: center;
-    color: #f8fff8;
+    align-items: center;
     text-align: center;
-    font-size: 10vh; //para el mixin se añadirá % según screen
-    text-align: justify;
-    font-weight: lighter;
-    margin: 3.9em;
-    padding: 0px;
+    flex-wrap: wrap;
+    color: white;
+  
+  
+    padding: 0;
     box-sizing: border-box;
+  
+    font-size: 6vw;
+    padding: 1rem;
   }
+
 }
 
-//NavBar -- Sami
-.prueba {
-  position: absolute;
-  bottom: 10%;
-  font: bold 10px;
-  display: flex;
-  justify-content: center;
-  margin: 0px;
 
-  .col-4 {
-    text-decoration: none;
-    color: white;
-  }
+//NavBar -- Sami 
+.nav-container {  
+  display: flex;
+  flex-wrap: wrap;
+  
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100vw;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+
+}
+
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0rem 5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+
 }
 
 //Character Page -- House Page - Ro
@@ -72,7 +99,7 @@ body {
   height: auto;
   margin: 5px;
   object-fit: cover;
-
+  
   .square {
     size: 10vw;
     color: #f8fff8;
@@ -87,7 +114,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin:4rem;
-
+  
   figure {
     display: flex;
     justify-content: center;
