@@ -1,8 +1,9 @@
-@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 @font-face {
-  font-family: 'GameOfThronesFont';
-  src: local('GameOfThronesFont'), url('./assets/fonts/game-of-thrones-font.ttf') format('truetype');
+  font-family: "GameOfThronesFont";
+  src: local("GameOfThronesFont"),
+    url("./assets/fonts/game-of-thrones-font.ttf") format("truetype");
 }
 
 // .img-fluid{
@@ -12,10 +13,10 @@
 
 //Cuerpo de la web
 body {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'GameOfThronesFont';
+  font-family: "GameOfThronesFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
@@ -24,7 +25,7 @@ body {
 
 //HomePage - Sami
 .fondo {
-  background-image: url("../src/assets/img/BackgroundHome.jpg") ;
+  background-image: url("../src/assets/img/BackgroundHome.jpg");
   background-size: inherit;
   // Para que la imagen de fondo no se repita
   background-repeat: no-repeat;
@@ -47,13 +48,12 @@ body {
     margin: 3.9em;
     padding: 0px;
     box-sizing: border-box;
-    
   }
 }
 
-//NavBar -- Sami 
+//NavBar -- Sami
 .prueba {
-  position: absolute;;
+  position: absolute;
   bottom: 10%;
   font: bold 10px;
   display: flex;
@@ -61,21 +61,58 @@ body {
   margin: 0px;
 
   .col-4 {
-      text-decoration: none;
-      color: white;
+    text-decoration: none;
+    color: white;
   }
 }
 
 //Character Page -- House Page - Ro
-.Character {
-  display: flex;
-  justify-items: center;
-  flex-wrap: wrap;
-  font-size: 2rem;
+.Character-Container {
+  width: auto;
+  height: auto;
+  margin: 5px;
+  object-fit: cover;
+
+  .square {
+    size: 10vw;
+    color: #f8fff8;
+  }
 }
 
-//characterCard
-.characterCard {}
+//characterCard - HouseCard
+.card-container {
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  flex-wrap: wrap;
+  margin:4rem;
+
+  figure {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      font-size: 1vw;
+      color: #f8fff8;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    img {
+      height: auto;       
+      width: auto; 
+      max-width: 500px; 
+      max-height: 400px;
+    }
+
+  }
+
+ 
+  
+
+ 
+}
 
 //ChronologyPage
 button {
@@ -103,5 +140,3 @@ main {
 //HousePage
 
 //HouseCard
-
-
