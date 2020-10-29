@@ -30,10 +30,12 @@ export default function CharactersPage() {
 
   return (
     <section>
+
       <article>
         {/* Esto sirve para conectar al padre componenete con el hijo  */}
         <CharacterCard characters={characters} />
       </article>
+      
     </section>
   );
 }

@@ -7,7 +7,7 @@ export default function CharacterCard(props) {
       {/* Hacemos un map que nos aplique el mismo tratamiento a todos los caracteres de nuestro array */}
 
       {props.characters.map((character, index) => (
-        <div className="col-4">
+        <div className="characterCard">
           <figure>
             {/* esto pinta la carta con un parrafo nombre y la imagen */}
             {/* se enlaza con la ruta del app.jsx del DetailPage */}

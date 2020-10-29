@@ -3,10 +3,12 @@
 //Luego lo pongo todo en orden y creo variables para tener solo una page donde modificar datos/tamaño/colores
 
 section {
-
+ 
   article {
     display: flex;
     justify-items: center;
-    margin: 5px;
+    flex-wrap: wrap;
+    font-size: 2rem;
+  
   }
 }
