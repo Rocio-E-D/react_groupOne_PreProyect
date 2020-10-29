@@ -114,13 +114,17 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin:4rem;
-  
+  //responsive
+  box-sizing: border-box;
+
+
   figure {
     display: flex;
     justify-content: center;
+    
 
     h2 {
-      font-size: 1vw;
+      font-size: 2vh;
       color: #f8fff8;
       text-decoration: none;
       text-align: center;
