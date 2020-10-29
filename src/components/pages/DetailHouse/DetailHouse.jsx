@@ -26,42 +26,42 @@ export default function DetailHouse(props) {
   console.log(house.titles);
 
   return (
-    <main className="container-hpuse">
+    <main className="container-house main-detail">
       
-      <figure className="col-1">
+      <figure className="col-1 image-title ">
         <img src={house[0].logoURL} alt={house[0].name} />
         <h2>{house[0].name}</h2>
         <p></p>
       </figure>
 
-      <div className="row">
-        <section className="col-2">
+      <div className="div-section-detail">
+        <section className="box-section">
           <h2>Lema</h2>
           <p>{house[0].sigil}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Sede</h2>
           <p>{house[0].seat}</p>
         </section>
 
-        <section className="col-2">
-          <h2>Región</h2>
+        <section className="box-section">
+          <h2>Region</h2>
           <p>{house[0].region}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Alianzas</h2>
           <p>{house[0].allegiances}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Religiones</h2>
           <p>{house[0].religion}</p>
         </section>
 
-        <section className="col-2">
-          <h2>Fundación</h2>
+        <section className="box-section">
+          <h2>Fundacion</h2>
           <p>{house[0].createdAt}</p>
         </section>
       </div>

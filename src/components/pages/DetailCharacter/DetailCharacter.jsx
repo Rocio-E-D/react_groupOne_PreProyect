@@ -41,42 +41,42 @@ export default function DetailCharacter(props) {
   console.log(character.titles);
 
   return (
-    <main className="container-character">
+    <main className="container-house main-detail">
       <div>{/* foto de casa y nombre de casa */}</div>
 
-      <figure className="col-1">
+      <figure className="image-title">
         <img src={character.image} alt={character.name} />
         <h2>{character.name}</h2>
         <p></p>
       </figure>
 
-      <div className="row">
-        <section className="col-2">
+      <div className="div-section-detail">
+        <section className="box-section">
           <h2>{house.name}house</h2>
           {/* <img src={house[0].logoURL} alt={house.name} /> */}
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Alianza</h2>
           <p>{character.allegiances}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Apariciones</h2>
           <p>{character.appearances}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Padre</h2>
           <p>{character.father}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Descendientes</h2>
           <p>{character.siblings}</p>
         </section>
 
-        <section className="col-2">
+        <section className="box-section">
           <h2>Títulos</h2>
           <p>{character.titles}</p>
         </section>

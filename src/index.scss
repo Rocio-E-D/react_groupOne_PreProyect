@@ -1,8 +1,9 @@
-@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 @font-face {
-  font-family: 'GameOfThronesFont';
-  src: local('GameOfThronesFont'), url('./assets/fonts/game-of-thrones-font.ttf') format('truetype');
+  font-family: "GameOfThronesFont";
+  src: local("GameOfThronesFont"),
+    url("./assets/fonts/game-of-thrones-font.ttf") format("truetype");
 }
 
 // .img-fluid{
@@ -12,10 +13,10 @@
 
 //Cuerpo de la web
 body {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'GameOfThronesFont';
+  font-family: "GameOfThronesFont";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
@@ -24,7 +25,7 @@ body {
 
 //HomePage - Sami
 .fondo {
-  background-image: url("../src/assets/img/BackgroundHome.jpg") ;
+  background-image: url("../src/assets/img/BackgroundHome.jpg");
   background-size: inherit;
   // Para que la imagen de fondo no se repita
   background-repeat: no-repeat;
@@ -47,13 +48,12 @@ body {
     margin: 3.9em;
     padding: 0px;
     box-sizing: border-box;
-    
   }
 }
 
-//NavBar -- Sami 
+//NavBar -- Sami
 .prueba {
-  position: absolute;;
+  position: absolute;
   bottom: 10%;
   font: bold 10px;
   display: flex;
@@ -61,8 +61,8 @@ body {
   margin: 0px;
 
   .col-4 {
-      text-decoration: none;
-      color: white;
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -75,7 +75,8 @@ body {
 }
 
 //characterCard
-.characterCard {}
+.characterCard {
+}
 
 //ChronologyPage
 button {
@@ -84,18 +85,66 @@ button {
 }
 
 //DetailCharacter = DetailHouse  -- share - Carlos
+.main-detail {
+  box-sizing: border-box;
+}
+.image-title {
+  text-align: center;
+}
 
-main {
+.container-house {
+  box-sizing: border-box;
   display: flex;
-  flex-grow: 4;
+
   flex-direction: column;
   align-items: center;
   color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  .row {
-    display: flex;
-    justify-items: center;
-  }
+  // .row {
+  //   display: flex;
+  //   justify-items: center;
+  // }
+}
+.div-section-detail {
+  // flex-direction: column;
+  // width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+
+  // height: 200px;
+
+  // flex-direction: column;
+
+  // justify-content: center;
+}
+.box-section {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+
+  // text-align: center;
+
+  padding: 1rem;
+
+  flex-direction: column;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  // flex-direction: column;
+  // width: 100px;
+
+  // justify-content: center;
 }
 
 //DetailPage --- ME decis
@@ -103,5 +152,8 @@ main {
 //HousePage
 
 //HouseCard
-
-
+.container-house {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
