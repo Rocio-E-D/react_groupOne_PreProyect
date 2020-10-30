@@ -29,10 +29,10 @@ export default function CharactersPage() {
   );
 
   return (
-    <section className="Character">
-      <article>
+    <section className="Character-Container">
+      <article className="square">
         {/* Esto sirve para conectar al padre componenete con el hijo  */}
-        <CharacterCard characters={characters} />
+        <CharacterCard characters={characters}/>
       </article>
       
     </section>

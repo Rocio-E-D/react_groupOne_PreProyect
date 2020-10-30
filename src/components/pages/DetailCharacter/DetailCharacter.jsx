@@ -77,7 +77,7 @@ export default function DetailCharacter(props) {
         </section>
 
         <section className="box-section">
-          <h2>Títulos</h2>
+          <h2>Titulos</h2>
           <p>{character.titles}</p>
         </section>
       </div>
